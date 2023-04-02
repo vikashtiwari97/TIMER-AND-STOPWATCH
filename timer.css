@@ -1,0 +1,118 @@
+:root {
+    --Dark-blue: #FAAA9D;
+    --sky-blue: #D8796E;
+    --sexy-red: #EA8F98;
+    ----fresh-grey: #FFEAE9;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background: var(--dark-blue);
+    height: 100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+      Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 120;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  button {
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    background: var(--sexy-red);
+    color: var(--fresh-grey);
+  
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+  }
+  
+  button:hover {
+    position: relative;
+    background: var(--sky-blue);
+  }
+  
+  input {
+    display: inline-block;
+    background: none;
+    border: none;
+    width: 1.2em;
+    color: var(--fresh-grey);
+    font-size: 2em;
+  }
+  
+  input:focus {
+    outline: none;
+    border-bottom: var(--fresh-grey) solid 3px;
+  }
+  
+  label {
+    padding: 0em 0.5em;
+  }
+  
+  .nav-container {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+  
+  .nav-item button {
+    font-size: 1.2em;
+    height: 4em;
+    width: 50vw;
+    margin: 0em;
+  }
+  
+  .wrapper {
+    color: var(--fresh-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+  }
+  
+  .time-label p {
+    font-size: 1.8rem;
+  }
+  
+  .preset-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
+  .preset-wrapper button {
+    background-color: var(--sky-blue);
+    border-radius: 0.5rem;
+  }
+  
+  .preset-wrapper button:hover {
+    background-color: var(--sexy-red);
+  }
+  
+  #hours,
+  #minutes,
+  #seconds {
+    font-weight: 120;
+    font-size: 2.5em;
+  }

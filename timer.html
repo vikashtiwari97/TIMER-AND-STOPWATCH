@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="timer.png" rel="icon" />
+    <link href="./timer.css" rel="stylesheet" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-container center-horizontal">
+        <li class="nav-item">
+          <button onclick="location.href='stopwatch.html'">Stopwatch</button>
+        </li>
+        <li class="nav-item">
+          <button onclick="location.href='timer.html'">Timer</button>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <h1 class="title">Timer</h1>
+      <div class="time-text">
+        <p>
+          <span id="hours">00</span>
+          :
+          <span id="minutes">00</span>
+          :
+          <span id="seconds">00</span>
+        </p>
+      </div>
+      <div class="time-label">
+        <p>
+          <span>Hours</span>
+          <span>Minutes</span>
+          <span>Seconds</span>
+        </p>
+      </div>
+      <div class="button-wrapper">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <div class="preset-wrapper" id="presets">
+        <button id="one-hour">1hour</button>
+        <button id="thirty-min">30min</button>
+        <button id="fifteen-min">15min</button>
+        <button id="ten-min">10min</button>
+        <button id="five-min">5min</button>
+        <button id="one-min">1min</button>
+        <button id="thirty-sec">30sec</button>
+        <button id="fifteen-sec">15sec</button>
+        <button id="five-sec">5sec</button>
+      </div>
+    </div>
+    <script src="./timer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./stopwatch.css" rel="stylesheet">
+        <link href="stopwatch.png" rel="icon">
+        <title>Stopwatch</title>
+    </head>
+    <body>
+        <script src="./stopwatch.js"></script>
+
+        <nav>
+            <ul class="nav-container center-horizontal">
+                <li class="nav-item"><button onclick="location.href='stopwatch.html'">Stopwatch</button></li>
+                <li class="nav-item"><button onclick="location.href='timer.html'">Timer</button></li>
+            </ul>
+        </nav>
+        <div class="wrapper center">
+            <h1 id="title">Stopwatch</h1>
+
+            <p>
+                <span id="minutes">00</span>
+                :
+                <span id="seconds">00</span>
+                :
+                <span id="tens">00</span>
+            </p>
+            <div class="button-div center-horizontal">
+                <button id="button-start">Start</button>
+                <button id="button-stop">Stop</button>
+                <button id="button-reset">Reset</button>
+                <button id="button-lap">Lap</button>
+            </div>
+
+            <div id="table-wrapper">
+                <table id="lapTable">
+                    <thead>
+                        <tr>
+                            <th>Lap</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>    
+</html>
